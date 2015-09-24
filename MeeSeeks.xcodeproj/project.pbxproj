@@ -12,7 +12,6 @@
 		175D69781BB31CC500942711 /* MeeSeeksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69771BB31CC500942711 /* MeeSeeksTests.swift */; };
 		175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69841BB31D9200942711 /* JSONDecodable.swift */; settings = {ASSET_TAGS = (); }; };
 		175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69941BB32A8700942711 /* JSONDecoder.swift */; settings = {ASSET_TAGS = (); }; };
-		1776DF271BB370F800258EE5 /* ServiceTask+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776DF261BB370F800258EE5 /* ServiceTask+JSON.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 		175D69791BB31CC500942711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175D69841BB31D9200942711 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		175D69941BB32A8700942711 /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
-		1776DF261BB370F800258EE5 /* ServiceTask+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceTask+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 			children = (
 				175D69841BB31D9200942711 /* JSONDecodable.swift */,
 				175D69941BB32A8700942711 /* JSONDecoder.swift */,
-				1776DF261BB370F800258EE5 /* ServiceTask+JSON.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 			files = (
 				175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */,
 				175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */,
-				1776DF271BB370F800258EE5 /* ServiceTask+JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

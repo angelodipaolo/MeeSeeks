@@ -7,21 +7,20 @@
 //
 
 import Foundation
-import THGWebService
 
 /// Provides an API for decoding JSONDecodable types.
-public struct JSONDecoder {
+public struct JSONDecoder<T: JSONDecodable> {
     
     /// Decode a JSON object
-    public static func decode(json: AnyObject, asType type: JSONDecodable.Type) -> JSONDecodable? {
-        return type.decode(json)
+    public static func decode(json: AnyObject) -> T? {
+        return T.decode(json)
     }
     /// Decode an array of JSON objects
-    public static func decodeArray(json: [AnyObject], asType type: JSONDecodable.Type) -> [JSONDecodable]? {
-        var results = [JSONDecodable]()
+    public static func decodeArray(json: [AnyObject]) -> [T]? {
+        var results = [T]()
         
         for j in json {
-            if let result = type.decode(j) {
+            if let result = T.decode(j) {
                 results.append(result)
             } else {
                 return nil
