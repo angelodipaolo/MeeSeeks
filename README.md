@@ -1,5 +1,7 @@
 # MeeSeeks
 
+![MeeSeeks](https://raw.github.com/angelodipaolo/MeeSeeks/master/logo.png)
+
 A collection of Swift helpers for iOS.
 
 ## JSON
