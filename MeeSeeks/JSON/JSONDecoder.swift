@@ -22,8 +22,6 @@ public struct JSONDecoder<T: JSONDecodable> {
         for j in json {
             if let result = T.decode(j) {
                 results.append(result)
-            } else {
-                return nil
             }
         }
         
