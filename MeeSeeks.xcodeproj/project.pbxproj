@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171035621BB4B64A001E8A80 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171035611BB4B64A001E8A80 /* Stateful.swift */; settings = {ASSET_TAGS = (); }; };
 		175D696C1BB31CC500942711 /* MeeSeeks.h in Headers */ = {isa = PBXBuildFile; fileRef = 175D696B1BB31CC500942711 /* MeeSeeks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		175D69731BB31CC500942711 /* MeeSeeks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175D69681BB31CC500942711 /* MeeSeeks.framework */; settings = {ASSET_TAGS = (); }; };
 		175D69781BB31CC500942711 /* MeeSeeksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69771BB31CC500942711 /* MeeSeeksTests.swift */; };
 		175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69841BB31D9200942711 /* JSONDecodable.swift */; settings = {ASSET_TAGS = (); }; };
 		175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69941BB32A8700942711 /* JSONDecoder.swift */; settings = {ASSET_TAGS = (); }; };
+		17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC16871BB6F3F6004D9E22 /* StateMachine.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171035611BB4B64A001E8A80 /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
 		175D69681BB31CC500942711 /* MeeSeeks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeeSeeks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		175D696B1BB31CC500942711 /* MeeSeeks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeeSeeks.h; sourceTree = "<group>"; };
 		175D696D1BB31CC500942711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		175D69791BB31CC500942711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175D69841BB31D9200942711 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		175D69941BB32A8700942711 /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		17FC16871BB6F3F6004D9E22 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171035601BB4B642001E8A80 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				171035611BB4B64A001E8A80 /* Stateful.swift */,
+				17FC16871BB6F3F6004D9E22 /* StateMachine.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		175D695E1BB31CC500942711 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 		175D696A1BB31CC500942711 /* MeeSeeks */ = {
 			isa = PBXGroup;
 			children = (
+				171035601BB4B642001E8A80 /* State */,
 				175D69831BB31D0200942711 /* JSON */,
 				175D696B1BB31CC500942711 /* MeeSeeks.h */,
 				175D696D1BB31CC500942711 /* Info.plist */,
@@ -209,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */,
+				171035621BB4B64A001E8A80 /* Stateful.swift in Sources */,
 				175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */,
+				17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
