@@ -44,7 +44,7 @@ let foo = JSONDecoder<Foo>.decode(json)
 
 ```
 
-## State
+## Managing State
 
 #### `Stateful`
 
@@ -115,5 +115,28 @@ class ViewController: UIViewController, Stateful
             dismissViewControllerAnimated(true, completion: nil)
         }
     }
+}
+```
+
+## Core Graphics
+
+#### `CGRect` Helpers
+
+```
+public extension CGRect {
+
+    public var calculatedWidth: CGFloat { get }
+
+    public var calculatedHeight: CGFloat { get }
+
+    public var midX: CGFloat { get }
+
+    public var midY: CGFloat { get }
+
+    public var center: CGPoint { get }
+
+    public func widthByPercent(percentage: CGFloat) -> CGFloat
+
+    public func heightByPercent(percentage: CGFloat) -> CGFloat
 }
 ```

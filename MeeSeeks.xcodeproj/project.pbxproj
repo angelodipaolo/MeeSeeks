@@ -14,6 +14,7 @@
 		175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69841BB31D9200942711 /* JSONDecodable.swift */; settings = {ASSET_TAGS = (); }; };
 		175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69941BB32A8700942711 /* JSONDecoder.swift */; settings = {ASSET_TAGS = (); }; };
 		17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC16871BB6F3F6004D9E22 /* StateMachine.swift */; settings = {ASSET_TAGS = (); }; };
+		17FC168B1BB6F69B004D9E22 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC168A1BB6F69B004D9E22 /* CGRect+Helpers.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		175D69841BB31D9200942711 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		175D69941BB32A8700942711 /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		17FC16871BB6F3F6004D9E22 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		17FC168A1BB6F69B004D9E22 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		175D696A1BB31CC500942711 /* MeeSeeks */ = {
 			isa = PBXGroup;
 			children = (
+				17FC16891BB6F69B004D9E22 /* CoreGraphics */,
 				171035601BB4B642001E8A80 /* State */,
 				175D69831BB31D0200942711 /* JSON */,
 				175D696B1BB31CC500942711 /* MeeSeeks.h */,
@@ -112,6 +115,14 @@
 				175D69941BB32A8700942711 /* JSONDecoder.swift */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		17FC16891BB6F69B004D9E22 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				17FC168A1BB6F69B004D9E22 /* CGRect+Helpers.swift */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FC168B1BB6F69B004D9E22 /* CGRect+Helpers.swift in Sources */,
 				175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */,
 				171035621BB4B64A001E8A80 /* Stateful.swift in Sources */,
 				175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */,
