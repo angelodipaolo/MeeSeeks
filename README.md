@@ -2,7 +2,11 @@
 
 ![MeeSeeks](https://raw.github.com/angelodipaolo/MeeSeeks/master/logo.png)
 
-A collection of Swift utilities and helpers for iOS programming tasks.
+A collection of Swift utilities and helpers for various iOS programming tasks.
+
+- [JSON](#json)
+- [Managing State](#managing-state)
+- [Core Graphics](#core-graphics)
 
 ## JSON
 
@@ -63,28 +67,40 @@ public protocol Stateful {
 }
 ```
 
-Usage example:
+#### Usage
+
+Bring order to your view controllers with `StateMachine` and `Stateful`.
 
 ```
+// possible view controller states
 enum ViewState {
+    case Loading
+    case Viewing(model: Model)
     case Editing(model: Model)
-    case Viewing
-    case Saving
-    case Cancelling
+    case Saving(model: Model)
+    case Cancelled
 }
 
 class ViewController: UIViewController, Stateful
     typealias StateType = ViewState
-
     var viewStateMachine = StateMachine<ViewController>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewStateMachine = StateMachine<ViewController>(state: .Viewing, owner: self)
+        // setup state machine to manage view states
+        // set `Loading` as initial state
+        viewStateMachine = StateMachine<ViewController>(state: .Loading, owner: self)
+
+        // fetch some data
+        modelController.fetchModel { [weak self] (model) in
+            
+            // enter the `Viewing` state to view the model data
+            self?.viewStateMachine?.state = .Viewing(model)
+        }
     }
 
-    // MARK: - Stateful Protocol Methods
+    // MARK: Stateful Protocol Methods
 
     func shouldEnterState(state: ViewState, fromPreviousState: ViewState) -> Bool {
         return true
@@ -93,27 +109,44 @@ class ViewController: UIViewController, Stateful
     func enteredState(state: ViewState) {
         
         switch state {
+
+        case .Loading:
+            title = "Loading"
+            showActivityIndicator()
+
+        case .Viewing(let model):
+            title = nil
+            hideActivityIndicator()
+            renderViewModel(model)
+
+        case .Editing(let model):
+            title = "Edit"
+            renderEditModel(model)
             
-        case .Editing:
-            
-            self.title = "Edit Model"
-            renderModel(modelController.model)
-            
-        case .Viewing:
-            
-            title = nil            
-            renderModel(modelController.model)
-            
-        case .Saving:
+        case .Saving(let model):
             title = "Saving..."
-            
-            modelController.saveModel { [weak self] in
+            showActivityIndicator()
+
+            model.save { [weak self] in
+                self?.hideActivityIndicator()
                 self?.dismissViewControllerAnimated(true, completion: nil)
             }
             
-        case .Cancelling:
+        case .Cancelled:
             dismissViewControllerAnimated(true, completion: nil)
         }
+    }
+
+    // MARK: Actions
+
+    @IBAction func editTapped() {
+        // enter `Editing` state
+        viewStateMachine?.state = .Editing(modelController.model)
+    }
+
+    @IBAction func saveTapped() {
+        // enter `Saving` state
+        viewStateMachine?.state = .Saving(modelController.model)
     }
 }
 ```
@@ -126,17 +159,13 @@ class ViewController: UIViewController, Stateful
 public extension CGRect {
 
     public var calculatedWidth: CGFloat { get }
-
     public var calculatedHeight: CGFloat { get }
 
     public var midX: CGFloat { get }
-
     public var midY: CGFloat { get }
-
     public var center: CGPoint { get }
 
     public func widthByPercent(percentage: CGFloat) -> CGFloat
-
     public func heightByPercent(percentage: CGFloat) -> CGFloat
 }
 ```
