@@ -7,6 +7,7 @@ A collection of Swift utilities and helpers for various iOS programming tasks.
 - [JSON](#json)
 - [Managing State](#managing-state)
 - [Core Graphics](#core-graphics)
+- [Foundation](#foundation)
 
 ## JSON
 
@@ -167,5 +168,14 @@ public extension CGRect {
 
     public func widthByPercent(percentage: CGFloat) -> CGFloat
     public func heightByPercent(percentage: CGFloat) -> CGFloat
+}
+```
+
+## Foundation
+
+```
+public extension NSMutableData {
+    /// Appends the value of a Swift String to the receiver.
+    public func appendString(string: String)
 }
 ```

@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		171035621BB4B64A001E8A80 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171035611BB4B64A001E8A80 /* Stateful.swift */; settings = {ASSET_TAGS = (); }; };
+		171035621BB4B64A001E8A80 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171035611BB4B64A001E8A80 /* Stateful.swift */; };
 		175D696C1BB31CC500942711 /* MeeSeeks.h in Headers */ = {isa = PBXBuildFile; fileRef = 175D696B1BB31CC500942711 /* MeeSeeks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		175D69731BB31CC500942711 /* MeeSeeks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175D69681BB31CC500942711 /* MeeSeeks.framework */; settings = {ASSET_TAGS = (); }; };
+		175D69731BB31CC500942711 /* MeeSeeks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175D69681BB31CC500942711 /* MeeSeeks.framework */; };
 		175D69781BB31CC500942711 /* MeeSeeksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69771BB31CC500942711 /* MeeSeeksTests.swift */; };
-		175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69841BB31D9200942711 /* JSONDecodable.swift */; settings = {ASSET_TAGS = (); }; };
-		175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69941BB32A8700942711 /* JSONDecoder.swift */; settings = {ASSET_TAGS = (); }; };
-		17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC16871BB6F3F6004D9E22 /* StateMachine.swift */; settings = {ASSET_TAGS = (); }; };
-		17FC168B1BB6F69B004D9E22 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC168A1BB6F69B004D9E22 /* CGRect+Helpers.swift */; settings = {ASSET_TAGS = (); }; };
+		175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69841BB31D9200942711 /* JSONDecodable.swift */; };
+		175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69941BB32A8700942711 /* JSONDecoder.swift */; };
+		179D02751BEF074400C017D5 /* NSMutableData+StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D02741BEF074400C017D5 /* NSMutableData+StringExtensions.swift */; };
+		17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC16871BB6F3F6004D9E22 /* StateMachine.swift */; };
+		17FC168B1BB6F69B004D9E22 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC168A1BB6F69B004D9E22 /* CGRect+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		175D69791BB31CC500942711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175D69841BB31D9200942711 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		175D69941BB32A8700942711 /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		179D02741BEF074400C017D5 /* NSMutableData+StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableData+StringExtensions.swift"; sourceTree = "<group>"; };
 		17FC16871BB6F3F6004D9E22 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
 		17FC168A1BB6F69B004D9E22 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		175D696A1BB31CC500942711 /* MeeSeeks */ = {
 			isa = PBXGroup;
 			children = (
+				179D02731BEF073A00C017D5 /* Foundation */,
 				17FC16891BB6F69B004D9E22 /* CoreGraphics */,
 				171035601BB4B642001E8A80 /* State */,
 				175D69831BB31D0200942711 /* JSON */,
@@ -115,6 +118,14 @@
 				175D69941BB32A8700942711 /* JSONDecoder.swift */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		179D02731BEF073A00C017D5 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				179D02741BEF074400C017D5 /* NSMutableData+StringExtensions.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		17FC16891BB6F69B004D9E22 /* CoreGraphics */ = {
@@ -235,6 +246,7 @@
 			files = (
 				17FC168B1BB6F69B004D9E22 /* CGRect+Helpers.swift in Sources */,
 				175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */,
+				179D02751BEF074400C017D5 /* NSMutableData+StringExtensions.swift in Sources */,
 				171035621BB4B64A001E8A80 /* Stateful.swift in Sources */,
 				175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */,
 				17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */,
