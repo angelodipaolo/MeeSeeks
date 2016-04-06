@@ -10,7 +10,7 @@ import Foundation
 
 /// Describes a type that is capable of entering a state.
 public protocol Stateful: class {
-    typealias StateType
+    associatedtype StateType
     func shouldEnterState(state: StateType, fromPreviousState previousState: StateType) -> Bool
     func enteredState(state: StateType)
 }
