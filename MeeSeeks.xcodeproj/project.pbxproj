@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		171035621BB4B64A001E8A80 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171035611BB4B64A001E8A80 /* Stateful.swift */; };
+		17446E641CD2634A004458A6 /* TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E631CD2634A004458A6 /* TableViewCellType.swift */; };
+		17446E661CD2639C004458A6 /* UITableView+TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E651CD2639C004458A6 /* UITableView+TableViewCellType.swift */; };
+		17446E681CD2658A004458A6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E671CD2658A004458A6 /* NibLoadable.swift */; };
 		175D696C1BB31CC500942711 /* MeeSeeks.h in Headers */ = {isa = PBXBuildFile; fileRef = 175D696B1BB31CC500942711 /* MeeSeeks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		175D69731BB31CC500942711 /* MeeSeeks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175D69681BB31CC500942711 /* MeeSeeks.framework */; };
 		175D69781BB31CC500942711 /* MeeSeeksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175D69771BB31CC500942711 /* MeeSeeksTests.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		171035611BB4B64A001E8A80 /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
+		17446E631CD2634A004458A6 /* TableViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellType.swift; sourceTree = "<group>"; };
+		17446E651CD2639C004458A6 /* UITableView+TableViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+TableViewCellType.swift"; sourceTree = "<group>"; };
+		17446E671CD2658A004458A6 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		175D69681BB31CC500942711 /* MeeSeeks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeeSeeks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		175D696B1BB31CC500942711 /* MeeSeeks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeeSeeks.h; sourceTree = "<group>"; };
 		175D696D1BB31CC500942711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +77,16 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		17446E621CD26340004458A6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				17446E631CD2634A004458A6 /* TableViewCellType.swift */,
+				17446E651CD2639C004458A6 /* UITableView+TableViewCellType.swift */,
+				17446E671CD2658A004458A6 /* NibLoadable.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		175D695E1BB31CC500942711 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +108,7 @@
 		175D696A1BB31CC500942711 /* MeeSeeks */ = {
 			isa = PBXGroup;
 			children = (
+				17446E621CD26340004458A6 /* UIKit */,
 				179D02731BEF073A00C017D5 /* Foundation */,
 				17FC16891BB6F69B004D9E22 /* CoreGraphics */,
 				171035601BB4B642001E8A80 /* State */,
@@ -247,9 +264,12 @@
 				17FC168B1BB6F69B004D9E22 /* CGRect+Helpers.swift in Sources */,
 				175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */,
 				179D02751BEF074400C017D5 /* NSMutableData+StringExtensions.swift in Sources */,
+				17446E681CD2658A004458A6 /* NibLoadable.swift in Sources */,
+				17446E641CD2634A004458A6 /* TableViewCellType.swift in Sources */,
 				171035621BB4B64A001E8A80 /* Stateful.swift in Sources */,
 				175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */,
 				17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */,
+				17446E661CD2639C004458A6 /* UITableView+TableViewCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
