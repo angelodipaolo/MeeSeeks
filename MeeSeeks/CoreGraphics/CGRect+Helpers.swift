@@ -11,11 +11,11 @@ import CoreGraphics
 public extension CGRect {
     public var center: CGPoint { return CGPoint(x: midX, y: midY) }
     
-    public func widthByPercent(percentage: CGFloat) -> CGFloat {
-        return CGRectGetWidth(self) * percentage
+    public func widthByPercent(_ percentage: CGFloat) -> CGFloat {
+        return self.width * percentage
     }
     
-    public func heightByPercent(percentage: CGFloat) -> CGFloat {
-        return CGRectGetHeight(self) * percentage
+    public func heightByPercent(_ percentage: CGFloat) -> CGFloat {
+        return self.height * percentage
     }
 }

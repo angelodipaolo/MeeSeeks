@@ -12,11 +12,11 @@ import Foundation
 public struct JSONDecoder<T: JSONDecodable> {
     
     /// Decode a JSON object
-    public static func decode(json: AnyObject) -> T? {
+    public static func decode(_ json: AnyObject) -> T? {
         return T.decode(json)
     }
     /// Decode an array of JSON objects
-    public static func decodeArray(json: [AnyObject]) -> [T]? {
+    public static func decodeArray(_ json: [AnyObject]) -> [T]? {
         var results = [T]()
         
         for j in json {

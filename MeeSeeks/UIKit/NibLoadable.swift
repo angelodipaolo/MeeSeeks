@@ -15,6 +15,6 @@ public protocol NibLoadable {
 
 public extension NibLoadable {
     static var nib: UINib? {
-        return UINib(nibName: String(Self), bundle: nil)
+        return UINib(nibName: String(describing: self), bundle: nil)
     }
 }

@@ -9,11 +9,11 @@
 import Foundation
 
 /// Lightweight class for managing a finite state machine
-public class StateMachine<S: Stateful> {
-    private unowned var owner: S
+open class StateMachine<S: Stateful> {
+    fileprivate unowned var owner: S
     
     /// The current state of the machine.
-    public var state: S.StateType {
+    open var state: S.StateType {
         didSet {
             if owner.shouldEnterState(state, fromPreviousState: oldValue) {
                 owner.enteredState(state)
