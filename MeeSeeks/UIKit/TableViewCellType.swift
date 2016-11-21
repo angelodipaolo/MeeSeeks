@@ -14,7 +14,7 @@ public protocol TableViewCellType {
 }
 
 public extension TableViewCellType {
-    static var reuseIdentifier: String { return String(Self) }
+    static var reuseIdentifier: String { return String(describing: self) }
 }
 
 public protocol NibBasedTableViewCellType: TableViewCellType, NibLoadable {}

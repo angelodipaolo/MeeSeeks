@@ -10,5 +10,5 @@ import Foundation
 
 /// Describes a type that can be created by decoding JSON.
 public protocol JSONDecodable {
-    static func decode(json: AnyObject) -> Self?
+    static func decode(_ json: AnyObject) -> Self?
 }

@@ -10,9 +10,9 @@ import Foundation
 
 public extension NSMutableData {
     /// Appends the value of a Swift String to the receiver.
-    func appendString(string: String) {
-        if let data = string.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true) {
-            appendData(data)
+    func appendString(_ string: String) {
+        if let data = string.data(using: String.Encoding.utf8, allowLossyConversion: true) {
+            append(data)
         }
     }
 }
