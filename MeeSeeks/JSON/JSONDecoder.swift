@@ -12,15 +12,15 @@ import Foundation
 public struct JSONDecoder<T: JSONDecodable> {
     
     /// Decode a JSON object
-    public static func decode(_ json: Any) -> T? {
-        return T.decode(json)
+    public static func decode(json: [String: Any]) throws -> T? {
+        return try T(json: json)
     }
     /// Decode an array of JSON objects
-    public static func decodeArray(_ json: [Any]) -> [T]? {
+    public static func decode(jsonArray: [[String: Any]]) throws -> [T]? {
         var results = [T]()
         
-        for j in json {
-            if let result = T.decode(j) {
+        for j in jsonArray {
+            if let result = try T(json: j) {
                 results.append(result)
             }
         }
