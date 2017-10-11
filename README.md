@@ -158,14 +158,7 @@ class ViewController: UIViewController, Stateful
 
 ```
 public extension CGRect {
-
-    public var calculatedWidth: CGFloat { get }
-    public var calculatedHeight: CGFloat { get }
-
-    public var midX: CGFloat { get }
-    public var midY: CGFloat { get }
     public var center: CGPoint { get }
-
     public func widthByPercent(percentage: CGFloat) -> CGFloat
     public func heightByPercent(percentage: CGFloat) -> CGFloat
 }
