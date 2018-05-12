@@ -10,15 +10,15 @@ import Foundation
 import UIKit
 
 extension UITableView {
-    public func registerCellOfType<CellType: UITableViewCell>(_: CellType.Type) where CellType: TableViewCellType {
+    public func registerCellOfType<CellType: UITableViewCell>(_: CellType.Type) where CellType: ViewCellType {
         register(CellType.self, forCellReuseIdentifier: CellType.reuseIdentifier)
     }
     
-    public func registerNibOfCellType<CellType: UITableViewCell>(_ cellOfType: CellType.Type) where CellType: NibBasedTableViewCellType {
+    public func registerNibOfCellType<CellType: UITableViewCell>(_ cellOfType: CellType.Type) where CellType: NibBasedViewCellType {
         register(CellType.nib, forCellReuseIdentifier: CellType.reuseIdentifier)
     }
     
-    public func dequeueReusableCell<CellType: UITableViewCell>(indexPath: IndexPath) -> CellType where CellType: TableViewCellType {
+    public func dequeueReusableCell<CellType: UITableViewCell>(indexPath: IndexPath) -> CellType where CellType: ViewCellType {
         return self.dequeueReusableCell(withIdentifier: CellType.reuseIdentifier, for: indexPath) as! CellType
     }
 }

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		171035621BB4B64A001E8A80 /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171035611BB4B64A001E8A80 /* Stateful.swift */; };
-		17446E641CD2634A004458A6 /* TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E631CD2634A004458A6 /* TableViewCellType.swift */; };
-		17446E661CD2639C004458A6 /* UITableView+TableViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E651CD2639C004458A6 /* UITableView+TableViewCellType.swift */; };
+		17446E641CD2634A004458A6 /* ViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E631CD2634A004458A6 /* ViewCellType.swift */; };
+		17446E661CD2639C004458A6 /* UITableView+ViewCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E651CD2639C004458A6 /* UITableView+ViewCellType.swift */; };
 		17446E681CD2658A004458A6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17446E671CD2658A004458A6 /* NibLoadable.swift */; };
 		175D696C1BB31CC500942711 /* MeeSeeks.h in Headers */ = {isa = PBXBuildFile; fileRef = 175D696B1BB31CC500942711 /* MeeSeeks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		175D69731BB31CC500942711 /* MeeSeeks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175D69681BB31CC500942711 /* MeeSeeks.framework */; };
@@ -33,8 +33,8 @@
 
 /* Begin PBXFileReference section */
 		171035611BB4B64A001E8A80 /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
-		17446E631CD2634A004458A6 /* TableViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellType.swift; sourceTree = "<group>"; };
-		17446E651CD2639C004458A6 /* UITableView+TableViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+TableViewCellType.swift"; sourceTree = "<group>"; };
+		17446E631CD2634A004458A6 /* ViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCellType.swift; sourceTree = "<group>"; };
+		17446E651CD2639C004458A6 /* UITableView+ViewCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ViewCellType.swift"; sourceTree = "<group>"; };
 		17446E671CD2658A004458A6 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		175D69681BB31CC500942711 /* MeeSeeks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MeeSeeks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		175D696B1BB31CC500942711 /* MeeSeeks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeeSeeks.h; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		17446E621CD26340004458A6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				17446E631CD2634A004458A6 /* TableViewCellType.swift */,
-				17446E651CD2639C004458A6 /* UITableView+TableViewCellType.swift */,
+				17446E631CD2634A004458A6 /* ViewCellType.swift */,
+				17446E651CD2639C004458A6 /* UITableView+ViewCellType.swift */,
 				17446E671CD2658A004458A6 /* NibLoadable.swift */,
 			);
 			path = UIKit;
@@ -267,11 +267,11 @@
 				175D69951BB32A8700942711 /* JSONDecoder.swift in Sources */,
 				179D02751BEF074400C017D5 /* NSMutableData+StringExtensions.swift in Sources */,
 				17446E681CD2658A004458A6 /* NibLoadable.swift in Sources */,
-				17446E641CD2634A004458A6 /* TableViewCellType.swift in Sources */,
+				17446E641CD2634A004458A6 /* ViewCellType.swift in Sources */,
 				171035621BB4B64A001E8A80 /* Stateful.swift in Sources */,
 				175D69851BB31D9200942711 /* JSONDecodable.swift in Sources */,
 				17FC16881BB6F3F6004D9E22 /* StateMachine.swift in Sources */,
-				17446E661CD2639C004458A6 /* UITableView+TableViewCellType.swift in Sources */,
+				17446E661CD2639C004458A6 /* UITableView+ViewCellType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

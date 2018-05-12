@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-public protocol TableViewCellType {
+public protocol ViewCellType {
     static var reuseIdentifier: String {get}
 }
 
-public extension TableViewCellType {
+public extension ViewCellType {
     static var reuseIdentifier: String { return String(describing: self) }
 }
 
-public protocol NibBasedTableViewCellType: TableViewCellType, NibLoadable {}
+public protocol NibBasedViewCellType: ViewCellType, NibLoadable {}
